@@ -19,7 +19,6 @@ size = Vector2(142, 136)
 [node name="Player" type="CharacterBody2D"]
 
 [node name="Tank" type="Node2D" parent="."]
-rotation = -1.5708
 script = ExtResource("1_nowfy")
 default_speed = 5000.0
 
@@ -27,22 +26,21 @@ default_speed = 5000.0
 texture = ExtResource("1_brvmu")
 
 [node name="Turret" type="Sprite2D" parent="Tank/Hull"]
-rotation = -1.5708
 texture = ExtResource("3_tqnft")
 
 [node name="Gun" type="Sprite2D" parent="Tank/Hull/Turret"]
 show_behind_parent = true
-position = Vector2(0, -80)
+position = Vector2(80, 0)
 texture = ExtResource("4_fmpfi")
 
 [node name="Track_left" type="Sprite2D" parent="Tank/Hull"]
 show_behind_parent = true
-position = Vector2(-54, 0)
+position = Vector2(0, -55)
 texture = ExtResource("1_d4h7h")
 
 [node name="Track_right" type="Sprite2D" parent="Tank/Hull"]
 show_behind_parent = true
-position = Vector2(55, 1)
+position = Vector2(0, 55)
 texture = ExtResource("2_b00h2")
 
 [node name="Camera2D" type="Camera2D" parent="Tank"]

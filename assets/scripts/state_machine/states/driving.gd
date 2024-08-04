@@ -22,7 +22,7 @@ func process_input(event: InputEvent) -> State:
 	return null
 
 func process_physics(delta: float) -> State:
-	vertical_movement = get_vertical_movement_input()
+	vertical_movement = -get_vertical_movement_input()
 	horizontal_movement = get_horizontal_movement_input()
 	
 	parent.velocity = parent.transform.x * vertical_movement * current_speed * delta

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://wq7jde6r25kb"]
+
+[ext_resource type="Texture2D" uid="uid://bs73bs3ml61hr" path="res://assets/graphics/parking_assets_map.svg" id="1_bumob"]
+[ext_resource type="PackedScene" uid="uid://ca5e5j6aydtgv" path="res://assets/nodes/player.tscn" id="2_1wl4c"]
+
+[node name="Test_Level" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(-335, 143)
+scale = Vector2(2, 2)
+texture = ExtResource("1_bumob")
+flip_h = true
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(1254, 143)
+scale = Vector2(2, 2)
+texture = ExtResource("1_bumob")
+
+[node name="Player" parent="." instance=ExtResource("2_1wl4c")]
